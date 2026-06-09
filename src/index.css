@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-github-dark: #0D1117;
+  --color-github-text: #E6EDF3;
+  --color-accent-blue: #58A6FF;
+  --color-accent-green: #3FB950;
+  --color-accent-orange: #FF7B4F;
+  --color-github-muted: #8B949E;
+  --color-code-bg: #161B22;
+  --color-github-border: #21262D;
+}
+
+/* Custom scrollbar and smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-github-dark);
+  color: var(--color-github-text);
+  font-family: var(--font-sans);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #21262D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30363D;
+}
